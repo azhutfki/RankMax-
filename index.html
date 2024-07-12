@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RankMax - SEO & Ads</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1f1f1f;
+            padding: 10px 20px;
+            color: #f39c12;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: url('hero.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .overview, #about, #contact, #testimonials {
+            padding: 20px;
+            text-align: center;
+            background: #1e1e1e;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form label {
+            margin-top: 10px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin-top: 5px;
+            background: #292929;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        form button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        .testimonial {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #292929;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(52, 152, 219, 0.6);
+        }
+
+        .testimonial img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        .testimonial div {
+            flex: 1;
+        }
+
+        .team-member {
+            margin: 20px 0;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            background: #292929;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border: 3px solid #f39c12;
+        }
+
+        .team-member div {
+            flex: 1;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>RankMax</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <h2>Maximize Your Online Presence</h2>
+        <p>Expert SEO and Ad Services to Grow Your Business</p>
+    </section>
+    <section class="overview">
+        <h2>Our Services</h2>
+        <p>At RankMax, we provide top-notch SEO and Ads services to help your business rank higher and reach more customers.</p>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>RankMax is dedicated to helping businesses grow through effective SEO and ad strategies. Our team of experts has years of experience and a proven track record of success.</p>
+        <h3>Our Mission</h3>
+        <p>Our mission is to empower businesses to achieve their online marketing goals and drive growth through innovative SEO and advertising solutions.</p>
+        <h3>Our Team</h3>
+        <div class="team-member">
+            <img src="https://www.upwork.com/profile-portraits/c1htMmEna7aiU2amt30uRRcREKzvblDb5Qux9Xn57suxSyxqR8-Ye3-C6nZAFjxA2h" alt="Michaela R.">
+            <div>
+                <h4>Michaela R.</h4>
+                <p>SEO Expert</p>
+                <p>5.0/5 Star Rating (30 jobs)</p>
+                <p>With over seven years of hands-on experience, I am an expert copywriter and am comfortable doing short and long-form content writing. I have a particular interest in SEO and can conduct keyword research and work keywords into blog posts or articles in relevant, meaningful ways.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>You can also reach us at contact@rankmax.com or call us at (123) 456-7890.</p>
+    </section>
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+            <img src="https://seooptimizers.com/wp-content/uploads/2014/03/Lissette-Palencia-120x120.jpg" alt="Lissette Palencia">
+            <div>
+                <p>"I hired RankMax company to do my website, SEO Optimizers did an amazing job at boosting my search rankings on Google. My web traffic is up and they are bringing in real customers into my store." - Lissette Palencia</p>
+                <p>Website: Sleeping Angels Co</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <img src="https://seooptimizers.com/wp-content/uploads/2014/03/Richard-Anderson-120x120.jpg" alt="Richard Anderson">
+            <div>
+                <p>"I was amazed by the results offered by SEO Optimizers RankMax. I received more traffic and better search engine results with their consulting services. Very smart at search engine optimization." - Richard Anderson</p>
+                <p>Website: Natural Area Rugs</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <img src="https://theadagency.com/wp-content/uploads/2016/07/Allen-Lew.png" alt="Allen Lew">
+            <div>
+                <p>"The AD Agency RankMax was fantastic. I loved the team’s energy, focus, and passion for the OPEFM branding, website, public relations and educational outreach initiatives!" - Allen Lew, City Administrator, District of Columbia</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 RankMax. All rights reserved.</p>
+    </footer>
+</body>
+</html>
